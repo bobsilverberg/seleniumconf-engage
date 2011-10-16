@@ -101,18 +101,18 @@
 	<cffunction name="twitterLoginCallback" access="public" output="false" returntype="void">
 		<cfargument name="event" type="MachII.framework.Event" required="true" />
 		
-		<cfscript>
-			var twitter = getPageContext().getRequest().getSession().getAttribute("twitter");
-			var requestToken = getPageContext().getRequest().getSession().getAttribute("requestToken");
-			var verifier = arguments.event.getArg("oauth_verifier");
-			var accessToken = twitter.getOAuthAccessToken(requestToken, verifier);
-			var user = getUserService().getUserBean();
-			var userInfo = 0;
-			var errors = StructNew();
-			var message = StructNew();
-		</cfscript>
-		
 		<cftry>
+			<cfscript>
+				var twitter = getPageContext().getRequest().getSession().getAttribute("twitter");
+				var requestToken = getPageContext().getRequest().getSession().getAttribute("requestToken");
+				var verifier = arguments.event.getArg("oauth_verifier");
+				var accessToken = twitter.getOAuthAccessToken(requestToken, verifier);
+				var user = getUserService().getUserBean();
+				var userInfo = 0;
+				var errors = StructNew();
+				var message = StructNew();
+			</cfscript>
+		
 			<cfhttp url="https://api.twitter.com/1/users/show.json?screen_name=#accessToken.getScreenName()#" method="get" />
 			
 			<cfset userInfo = DeserializeJSON(CFHTTP.FileContent) />

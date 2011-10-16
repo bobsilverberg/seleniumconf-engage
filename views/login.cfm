@@ -17,10 +17,11 @@
 	</div>
 </cfif>
 
-<h4>Log in to the Topic Survey using your Facebook or Twitter account!</h4>
+<h4>Log in to the Topic Survey and Call for Speakers using your Twitter account.</h4>
 
 <table border="0">
 	<tr>
+		<!--- Facebook login
 		<td>
 			<fb:login-button perms="publish_stream,create_event,rsvp_event,offline_access,user_hometown,user_location,user_online_presence,user_status,user_website,email" autologoutlink="true"></fb:login-button>
 			<div id="fb-root"></div>
@@ -50,6 +51,7 @@
 				}());
 			</script>
 		</td>
+		--->
 		<td>
 			<cfif !StructKeyExists(session, "user") || session.user.getOauthProvider() != "Twitter">
 				<a href="#BuildUrl('postLogin', 'loginMethod=Twitter')#"><img src="/images/twitter_login.png" width="146" height="23" border="0" alt="Login With Twitter" title="Login With Twitter" /></a>

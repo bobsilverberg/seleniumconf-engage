@@ -103,6 +103,7 @@
 								</span>
 							</cfif>
 						<cfelse>
+							<!--- Facebook login
 							<fb:login-button perms="publish_stream,create_event,rsvp_event,offline_access,user_hometown,user_location,user_online_presence,user_status,user_website,email" autologoutlink="true"></fb:login-button>
 							<div id="fb-root"></div>
 							<script>
@@ -131,6 +132,7 @@
 								}());
 							</script>
 							<br />
+							--->
 							<cfif !StructKeyExists(session, "user") || session.user.getOauthProvider() != "Twitter">
 								<a href="#BuildUrl('postLogin', 'loginMethod=Twitter')#"><img src="/images/twitter_login.png" width="146" height="23" border="0" alt="Login With Twitter" title="Login With Twitter" /></a>
 							<cfelse>
