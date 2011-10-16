@@ -1,0 +1,382 @@
+/* @override 
+	http://mura:8500/cfo/includes/themes/cfobjective/css/site.css
+	http://cfobjective.rqsgd.com/cfo/includes/themes/cfobjective/css/site.css
+*/
+
+body {
+	margin: 0;
+	background: #76abc9 url(../images/bg-gradient.png) repeat-x;
+	font: 79% "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #525f66
+}
+
+#container {
+	background: center 0 url(../images/header-2011.jpg) no-repeat
+}
+
+#inner {
+	width: 1000px;
+	margin: auto
+}
+
+#masthead {
+	position: relative;
+	height: 150px
+}
+
+#navPrimary {
+	position: absolute;
+	top: 89px;
+	left: 209px
+}
+
+#navPrimary, #navPrimary li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none
+}
+
+#navPrimary li {
+	display: block;
+	float: left;
+	height: 33px;
+	margin-right: 1.75em;
+}
+
+#navPrimary li a {
+	color: #b0d9ee;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+	text-shadow: 0 0 5px #345088;
+	filter: Shadow(Color=#345088, 	
+			Direction=0, 
+			Strength=5);
+}
+
+#navPrimary li a:hover, #navPrimary li.current a {
+	color: #fff;
+}
+
+/*#navPrimary li a span {
+	position: absolute;
+	top: -100000em;
+	left: -10000em
+}*/
+
+/*#navPrimary li a {
+	background-repeat: no-repeat;
+	display: block
+}
+
+#navPrimary li#navHome a {
+	width: 63px;
+	height: 33px;
+	background-image: url(../images/nav-home.jpg)
+}
+
+#navPrimary li#navHome a:hover {
+	background-image: url(../images/nav-home_over.jpg)
+}
+
+#navPrimary li#navNews a {
+	width: 64px;
+	height: 33px;
+	background-image: url(../images/nav-news.jpg)
+}
+
+#navPrimary li#navNews a:hover {
+	background-image: url(../images/nav-news_over.jpg)
+}
+
+#navPrimary li#navAbout a {
+	width: 82px;
+	height: 33px;
+	background-image: url(../images/nav-about.jpg)
+}
+
+#navPrimary li#navAbout a:hover {
+	background-image: url(../images/nav-about_over.jpg)
+}
+
+#navPrimary li#navSponsors a {
+	width: 85px;
+	height: 33px;
+	background-image: url(../images/nav-sponsors.jpg)
+}
+
+#navPrimary li#navSponsors a:hover {
+	background-image: url(../images/nav-sponsors_over.jpg)
+}
+
+#navPrimary li#navProgram a {
+	width: 85px;
+	height: 33px;
+	background-image: url(../images/nav-program.jpg)
+}
+
+#navPrimary li#navProgram a:hover {
+	background-image: url(../images/nav-program_over.jpg)
+}
+
+#navPrimary li#navSpeakers a {
+	width: 88px;
+	height: 33px;
+	background-image: url(../images/nav-speakers.jpg)
+}
+
+#navPrimary li#navSpeakers a:hover {
+	background-image: url(../images/nav-speakers_over.jpg)
+}
+
+#navPrimary li#navPricing a {
+	width: 67px;
+	height: 33px;
+	background-image: url(../images/nav-pricing.jpg)
+}
+
+#navPrimary li#navPricing a:hover {
+	background-image: url(../images/nav-pricing_over.jpg)
+}
+
+#navPrimary li#navRegister a {
+	width: 78px;
+	height: 33px;
+	background-image: url(../images/nav-register.jpg)
+}
+
+#navPrimary li#navRegister a:hover {
+	background-image: url(../images/nav-register_over.jpg)
+}
+
+#navPrimary li#navContact a {
+	width: 97px;
+	height: 33px;
+	background-image: url(../images/nav-contact.jpg)
+}
+
+#navPrimary li#navContact a:hover {
+	background-image: url(../images/nav-contact_over.jpg)
+}*/
+
+#logo {
+	position: relative;
+	left: 77px;
+	top: 10px
+}
+
+#dates {
+	position: absolute;
+	right: 70px;
+	top: 35px
+}
+
+#content {
+	width: 558px;
+	float: left;
+	margin: 0 20px 0 40px;
+	padding: 16px;
+	/*background: #FFF url(../images/content-top.gif) top no-repeat;*/
+	background: #fff;
+	min-height: 600px;
+	position: relative;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: 0px 0px 6px #4d7da6;
+	-webkit-box-shadow: 0px 0px 6px #4d7da6;
+	-moz-box-shadow: 0px 0px 6px #4d7da6;
+}
+
+/*#content-foot {
+	width: 590px;
+	height: 8px;
+	background: url(../images/content-bottom.gif) bottom no-repeat;
+	position: absolute;
+	bottom: 0
+}*/
+
+#sidebar {
+	width: 242px;
+	padding: 16px;
+	float: left;
+	/*background: #FFF url(../images/sidebar-top.gif) top no-repeat;*/
+	background: #fff;
+	min-height: 600px;
+	position: relative;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: 0px 0px 6px #4d7da6;
+	-webkit-box-shadow: 0px 0px 6px #4d7da6;
+	-moz-box-shadow: 0px 0px 6px #4d7da6;
+}
+
+/*#sidebar-foot {
+	background: url(../images/sidebar-bottom.gif) bottom no-repeat;
+	height: 5px;
+	width: 290px;
+	position: absolute;
+	bottom: 0
+}*/
+
+#footer {
+	width: 900px;
+	margin: auto;
+	padding: 5px 50px;
+	font-size: 0.9em;
+	color: #fff;
+	clear: both;
+}
+
+#footer a {
+	color: #fff;
+}
+
+#newsletter {
+	margin: 1em;
+}
+
+#newsletter label {
+	
+}
+
+#newsletter input {
+	margin: 0.2em 0;
+}
+
+a {
+	color: #308F00;
+}
+
+p.centerText {
+	text-align: center;
+}
+
+#content ul {
+	margin: 1.5em 3em;
+}
+
+#sidebar div {
+	clear: both;
+	margin-bottom: 1em;
+	overflow: hidden;
+}
+
+.speakers ul, #speakers #content ul {
+	margin: 0;
+	
+}
+
+.speakers li, .sysSpeakers #content li {
+	float:left;
+	font-size:12px;
+	line-height:1;
+	list-style:none outside none;
+	margin:0 2% 0.5em 0;
+	width:46%;
+}
+
+.speakers li:nth-child(even) {
+	margin-right: 0;
+}
+
+.sysSpeakers #content li {
+	margin-bottom: 1em;
+	}
+
+#small_print, #small_print a {
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: lighter;
+	color: #BBB;
+	text-align: center;
+	font-size: 9px;
+}
+
+span.date {
+	display: block;
+	font-weight: normal;
+	font-size: 0.8em;
+	padding-top: 1em
+}
+
+span.city {
+	display: block;
+	font-weight: normal;
+	font-size: 0.8em
+}
+
+span.thumbnail {
+	float: left;
+	margin: 5px 5px 5px 0
+}
+
+/*.sponsors {
+	text-align: center
+}*/
+
+.sponsors img {
+	display: block;
+	margin: 1.5em auto
+}
+
+.preConfSession {
+	padding: 1.5em 0 .5em;
+	border-top: 1px dotted #d4e2ee;
+}
+
+.sysSchedule table {
+	width: 100%;
+	margin-bottom: 2em;
+}
+
+th {
+	border: 1px solid #ccc;
+	background: #ccc;
+}
+
+table .time {
+	width: 18% !important;
+}
+
+td {
+	border: 1px solid #ccc;
+	width: 20% !important;
+}
+
+.archDesign {
+	background: #cdcaff;
+}
+
+.intTools {
+	background: #d1ffca;
+}
+
+.procMethod {
+	background: #feffb8;
+}
+
+.ria {
+	background: #eccaff;
+}
+
+.adobe {
+	background: #fbcccc;
+}
+
+.clear {
+	clear: both;
+}
+
+#googleGroup {
+	border-top: 1px solid #ccc;
+}
+
+#googleGroup td {
+	border: 0;
+	text-align: left;
+}
+
+#googleGroup td img {
+	margin-top: 1em;
+}
